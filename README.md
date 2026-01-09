@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NexTrade
 
-## Getting Started
+NexTrade is a modern crypto trading platform built with **Next.js** and **MySQL**, featuring secure authentication, animated UI transitions, referral tracking, and automatic blockchain address generation on user signup.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Authentication System
+  - Login and Signup with email and password
+  - Secure cookie-based authentication
+  - Remember Me support
+  - Forgot Password flow
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Modern UI / UX
+  - Built with Next.js App Router
+  - Framer Motion animations for smooth transitions
+  - Responsive design with mobile hamburger menu
+  - Tailwind CSS styling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Referral System
+  - Supports 8-digit referral codes
+  - Referral codes stored via URL query (`?ref=XXXXXXXX`)
+  - Automatically saved using `localStorage`
 
-## Learn More
+- Wallet Address Generation
+  - Automatically generates crypto addresses on signup
+  - Supports:
+    - TRON (TRX / USDT-TRC20)
+    - Ethereum (ETH / ERC20)
+  - Addresses are linked to user accounts in the database
 
-To learn more about Next.js, take a look at the following resources:
+- Fast and Secure
+  - Client-side hydration safe
+  - Protected routes
+  - Authentication check on page load
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+### Frontend
+- Next.js (App Router)
+- React
+- JavaScript
+- Tailwind CSS
+- Framer Motion
+- Lucide Icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Backend
+- Next.js API Routes
+- MySQL
+- JWT Authentication
+- HTTP-only Cookies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Project Structure
+
